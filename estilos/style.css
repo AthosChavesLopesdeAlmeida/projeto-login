@@ -40,7 +40,7 @@ section#login {
 
   background-color: var(--cor3);
   width:250px;
-  height: 500px;
+  height: 515px;
   border-radius: 20px;
 
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.493);
@@ -69,4 +69,89 @@ div#formulario > h1 {
 
 div#formulario > p {
   font-size: 0.8em;
+}
+
+form > input[type=submit] {
+  display: block;
+  font-size: 1em;
+  width: 100%;
+  background-color: var(--cor1);
+  color: var(--cor3);
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  cursor: pointer;
+}
+
+form > input[type=submit]:hover {
+  background-color: #2d6462;
+  cursor: pointer;
+}
+
+form > div.campo {
+  background-color: var(--cor2);
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  margin: 5px 0px;
+  display: flex; /* Usar flexbox para alinhar os elementos */
+  align-items: center; /* Centralizar verticalmente */
+  border: 2px solid var(--cor2);
+}
+
+div.campo > label {
+  display: none;
+}
+
+div.campo > span {
+
+  color: white;
+  font-size: 2em;
+  width: 40px;
+  height: 100%; /* Ajustar à altura do campo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.campo > input {
+  background-color: #94cfcd;
+  font-size: 1em;
+  width: 100%; /* Ocupa todo o espaço disponível */
+  height: 100%;
+  border: 0;
+  border-radius: 8px;
+  padding: 0 10px; /* Espaçamento interno */
+  box-sizing: border-box; /* Inclui padding no cálculo da largura */
+}
+
+div.campo > input:focus-within {
+  background-color: white;
+}
+
+form > a.botao {
+  display: block;
+  text-align: center;
+  font-size: 1em;
+  width: 100%;
+  height: 40px;
+  padding-top: 5px;
+  margin-top: 5px;
+  background-color: var(--cor3);
+  border: 1px solid var(--cor1);
+  color: #2d6462 ;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+form > a.botao:hover {
+  background-color: #6cd3cf;
+  color: var(--cor3);
+  cursor: pointer;
+}
+
+form > a.botao > span {
+  font-size: 0.8em;
+  text-align: center;
+  margin-left: 5px;
 }
